@@ -8,19 +8,15 @@
  */
 
 import React, { Component } from 'react';
-import { View, StatusBar } from 'react-native';
+import { View } from 'react-native';
 
-import BarraNavegacao from './src/components/BarraNavegacao';
+import CenaPrincipal from './src/components/CenaPrincipal';
 
 class App extends Component {
   render() {
     return (
       <View>
-        <StatusBar
-          hidden
-          backgroundColor={'#ccc'}
-        />
-        <BarraNavegacao />
+        <CenaPrincipal />
       </View>      
     );
   }
