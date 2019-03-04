@@ -6,7 +6,7 @@ import {
   StyleSheet
 } from 'react-native';
 
-import BarraNavegacao from './BarraNavegacao';
+import BarraNavegacao from '../components/BarraNavegacao';
 import Logo from '../images/logo.png';
 import menuClienteLogo from '../images/menu_cliente.png';
 import menuContatoLogo from '../images/menu_contato.png';

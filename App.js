@@ -10,13 +10,14 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 
-import CenaPrincipal from './src/components/CenaPrincipal';
+import CenaPrincipal from './src/cenas/CenaPrincipal';
+import CenaCliente from './src/cenas/CenaCliente';
 
 class App extends Component {
   render() {
     return (
       <View>
-        <CenaPrincipal />
+        <CenaCliente />
       </View>      
     );
   }
