@@ -3,7 +3,8 @@ import {
   View,
   StatusBar,
   Image,
-  StyleSheet
+  StyleSheet,
+  TouchableHighlight
 } from 'react-native';
 
 import BarraNavegacao from '../components/BarraNavegacao';
@@ -13,7 +14,7 @@ import menuContatoLogo from '../images/menu_contato.png';
 import menuEmpresaLogo from '../images/menu_empresa.png';
 import menuServicoLogo from '../images/menu_servico.png';
 
-const CenaPrincipal = () => {
+const CenaPrincipal = ({ navigator }) => {
   const { logo, menu, menuGrupo, imagemMenu } = estilos;
 
   return (
@@ -30,12 +31,31 @@ const CenaPrincipal = () => {
 
       <View style={menu}>
         <View style={menuGrupo}>
-          <Image style={imagemMenu} source={menuClienteLogo} />
-          <Image style={imagemMenu} source={menuContatoLogo} />
+          
+          <TouchableHighlight
+            onPress={() => navigator.push('cliente')}
+          >
+            <Image style={imagemMenu} source={menuClienteLogo} />
+          </TouchableHighlight>
+          
+          <TouchableHighlight
+            onPress={() => navigator.push('contato')}
+          >
+            <Image style={imagemMenu} source={menuContatoLogo} />
+          </TouchableHighlight>
         </View>
         <View style={menuGrupo}>
-          <Image style={imagemMenu} source={menuEmpresaLogo} />
-          <Image style={imagemMenu} source={menuServicoLogo} />
+          <TouchableHighlight
+            onPress={() => navigator.push('empresa')}
+          >
+            <Image style={imagemMenu} source={menuEmpresaLogo} />
+          </TouchableHighlight>
+
+          <TouchableHighlight
+            onPress={() => navigator.push('servico')}
+          >
+            <Image style={imagemMenu} source={menuServicoLogo} />
+          </TouchableHighlight>
         </View>
       </View>
     </View>

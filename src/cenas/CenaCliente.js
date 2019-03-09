@@ -21,7 +21,7 @@ const CenaCliente = () => {
       <StatusBar
         backgroundColor="#ccc"
       />
-      <BarraNavegacao />
+      <BarraNavegacao voltar />
       
       <View style={cabecalho}>
         <Image source={detalhesClientes} />
