@@ -34,6 +34,7 @@ class App extends Component {
             case 'servico':
               return <CenaServico navigator={navigator} />;
             default:
+              return <CenaPrincipal navigator={navigator} />;
           } 
         }}
       />

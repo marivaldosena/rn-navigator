@@ -14,10 +14,16 @@ import cliente1 from '../images/cliente1.png';
 import cliente2 from '../images/cliente2.png';
 
 const CenaCliente = ({ navigator }) => {
-  const { cabecalho, titulo, detalhes, texto } = estilos;
+  const {
+    container, 
+    cabecalho,
+    titulo,
+    detalhes,
+    texto
+  } = estilos;
 
   return (
-    <View>
+    <View style={container}>
       <StatusBar
         backgroundColor="#ccc"
       />
@@ -42,6 +48,10 @@ const CenaCliente = ({ navigator }) => {
 };
 
 const estilos = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
   cabecalho: {
     flexDirection: 'row',
     marginTop: 20,

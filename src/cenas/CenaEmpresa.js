@@ -11,6 +11,7 @@ import detalheImage from '../images/detalhe_empresa.png';
 
 const CenaEmpresa = ({ navigator }) => {
   const {
+    container,
     cabecalho,
     titulo,
     detalhes,
@@ -18,7 +19,7 @@ const CenaEmpresa = ({ navigator }) => {
   } = estilos;
 
   return (
-    <View>
+    <View style={container}>
       <StatusBar
         backgroundColor='#ccc'
       />
@@ -48,6 +49,10 @@ const CenaEmpresa = ({ navigator }) => {
 };
 
 const estilos = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
   cabecalho: {
     flexDirection: 'row',
     marginTop: 20,

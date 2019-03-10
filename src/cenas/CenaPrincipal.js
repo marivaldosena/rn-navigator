@@ -15,10 +15,16 @@ import menuEmpresaLogo from '../images/menu_empresa.png';
 import menuServicoLogo from '../images/menu_servico.png';
 
 const CenaPrincipal = ({ navigator }) => {
-  const { logo, menu, menuGrupo, imagemMenu } = estilos;
+  const {
+    container,
+    logo,
+    menu,
+    menuGrupo,
+    imagemMenu
+  } = estilos;
 
   return (
-    <View>
+    <View style={container}>
       <StatusBar
         backgroundColor="#ccc"
       />
@@ -63,6 +69,10 @@ const CenaPrincipal = ({ navigator }) => {
 };
 
 const estilos = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
   logo: {
     marginTop: 30,
     alignItems: 'center',

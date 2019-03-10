@@ -11,6 +11,7 @@ import detalheImage from '../images/detalhe_contato.png';
 
 const CenaContato = ({ navigator }) => {
   const {
+    container,
     cabecalho,
     titulo,
     detalhes,
@@ -18,7 +19,7 @@ const CenaContato = ({ navigator }) => {
   } = estilos;
 
   return (
-    <View>
+    <View style={container}>
       <StatusBar
         backgroundColor='#ccc'
       />
@@ -40,6 +41,10 @@ const CenaContato = ({ navigator }) => {
 };
 
 const estilos = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
   cabecalho: {
     flexDirection: 'row',
     marginTop: 20,
