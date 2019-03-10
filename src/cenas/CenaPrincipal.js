@@ -43,12 +43,16 @@ const CenaPrincipal = ({ navigator }) => {
         <View style={menuGrupo}>
           
           <TouchableHighlight
+            underlayColor={'#b9c941'}
+            activeOpacity={0.3}
             onPress={() => navigator.push({ id: 'cliente' })}
           >
             <Image style={imagemMenu} source={menuClienteLogo} />
           </TouchableHighlight>
           
           <TouchableHighlight
+            underlayColor={'#61bd8c'}
+            activeOpacity={0.3}
             onPress={() => navigator.push({ id: 'contato' })}
           >
             <Image style={imagemMenu} source={menuContatoLogo} />
@@ -56,12 +60,16 @@ const CenaPrincipal = ({ navigator }) => {
         </View>
         <View style={menuGrupo}>
           <TouchableHighlight
+            underlayColor={'#ec7148'}
+            activeOpacity={0.3}
             onPress={() => navigator.push({ id: 'empresa' })}
           >
             <Image style={imagemMenu} source={menuEmpresaLogo} />
           </TouchableHighlight>
 
           <TouchableHighlight
+            underlayColor={'#19d1c8'}
+            activeOpacity={0.3}
             onPress={() => navigator.push({ id: 'servico' })}
           >
             <Image style={imagemMenu} source={menuServicoLogo} />

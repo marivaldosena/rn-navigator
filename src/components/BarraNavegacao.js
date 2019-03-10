@@ -14,6 +14,8 @@ const BarraNavegacao = ({ voltar, navigator, corDeFundo }) => {
     return (
       <View style={[barraTitulo, { backgroundColor: corDeFundo }]}>
         <TouchableHighlight
+          underlayColor={corDeFundo}
+          activeOpacity={0.3}
           onPress={() => navigator.pop()}
         >
           <Image source={btnVoltarImage} />
