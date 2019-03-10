@@ -14,6 +14,8 @@ import menuContatoLogo from '../images/menu_contato.png';
 import menuEmpresaLogo from '../images/menu_empresa.png';
 import menuServicoLogo from '../images/menu_servico.png';
 
+const corDeFundo = '#ccc';
+
 const CenaPrincipal = ({ navigator }) => {
   const {
     container,
@@ -26,10 +28,12 @@ const CenaPrincipal = ({ navigator }) => {
   return (
     <View style={container}>
       <StatusBar
-        backgroundColor="#ccc"
+        backgroundColor={corDeFundo}
       />
       
-      <BarraNavegacao />
+      <BarraNavegacao
+        corDeFundo={corDeFundo}
+      />
       
       <View style={logo}>
         <Image source={Logo} />

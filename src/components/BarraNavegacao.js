@@ -8,11 +8,11 @@ import {
 } from 'react-native';
 import btnVoltarImage from '../images/btn_voltar.png';
 
-const BarraNavegacao = ({ voltar, navigator }) => {
+const BarraNavegacao = ({ voltar, navigator, corDeFundo }) => {
   const { barraTitulo, titulo } = estilos;
   if (voltar) {
     return (
-      <View style={barraTitulo}>
+      <View style={[barraTitulo, { backgroundColor: corDeFundo }]}>
         <TouchableHighlight
           onPress={() => navigator.pop()}
         >
@@ -24,7 +24,7 @@ const BarraNavegacao = ({ voltar, navigator }) => {
     );
   }
     return (
-      <View style={barraTitulo}>
+      <View style={[barraTitulo, { backgroundColor: corDeFundo }]}>
         <Text style={titulo}>ATM Consultoria</Text>
       </View>
     );
@@ -32,7 +32,6 @@ const BarraNavegacao = ({ voltar, navigator }) => {
 
 const estilos = StyleSheet.create({
   barraTitulo: {
-    backgroundColor: '#ccc',
     padding: 10,
     height: 60,
     flexDirection: 'row',

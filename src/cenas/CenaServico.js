@@ -9,6 +9,8 @@ import {
 import BarraNavegacao from '../components/BarraNavegacao';
 import detalheImage from '../images/detalhe_servico.png';
 
+const corDeFundo = '#19d1c8';
+
 const CenaServico = ({ navigator }) => {
   const {
     container,
@@ -21,9 +23,13 @@ const CenaServico = ({ navigator }) => {
   return (
     <View style={container}>
       <StatusBar
-        backgroundColor='#ccc'
+        backgroundColor={corDeFundo}
       />
-      <BarraNavegacao voltar navigator={navigator} />
+      <BarraNavegacao
+        voltar
+        navigator={navigator}
+        corDeFundo={corDeFundo}
+      />
       
       <View style={cabecalho}>
         <Image source={detalheImage} />
@@ -50,7 +56,7 @@ const estilos = StyleSheet.create({
   },
   titulo: {
     fontSize: 30,
-    color: '#19d1c8',
+    color: corDeFundo,
     marginLeft: 10,
     marginTop: 25,
   },
