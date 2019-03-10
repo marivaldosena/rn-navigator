@@ -7,7 +7,7 @@ import {
   Image
 } from 'react-native';
 import BarraNavegacao from '../components/BarraNavegacao';
-import detalheServicoImage from '../images/detalhe_servico.png';
+import detalheImage from '../images/detalhe_servico.png';
 
 const CenaServico = ({ navigator }) => {
   const {
@@ -25,7 +25,7 @@ const CenaServico = ({ navigator }) => {
       <BarraNavegacao voltar navigator={navigator} />
       
       <View style={cabecalho}>
-        <Image source={detalheServicoImage} />
+        <Image source={detalheImage} />
         <Text style={titulo}>Nossos Serviços</Text>
       </View>
 

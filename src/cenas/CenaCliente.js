@@ -9,7 +9,7 @@ import {
 
 import BarraNavegacao from '../components/BarraNavegacao';
 
-import detalhesClientes from '../images/detalhe_cliente.png';
+import detalheImage from '../images/detalhe_cliente.png';
 import cliente1 from '../images/cliente1.png';
 import cliente2 from '../images/cliente2.png';
 
@@ -24,7 +24,7 @@ const CenaCliente = ({ navigator }) => {
       <BarraNavegacao voltar navigator={navigator} />
       
       <View style={cabecalho}>
-        <Image source={detalhesClientes} />
+        <Image source={detalheImage} />
         <Text style={titulo}>Nossos Clientes</Text>
       </View>
 
