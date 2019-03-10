@@ -39,7 +39,7 @@ const CenaPrincipal = ({ navigator }) => {
           </TouchableHighlight>
           
           <TouchableHighlight
-            onPress={() => alert('contato')}
+            onPress={() => navigator.push({ id: 'contato' })}
           >
             <Image style={imagemMenu} source={menuContatoLogo} />
           </TouchableHighlight>

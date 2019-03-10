@@ -12,6 +12,7 @@ import { Navigator } from 'react-native-deprecated-custom-components';
 
 import CenaPrincipal from './src/cenas/CenaPrincipal';
 import CenaCliente from './src/cenas/CenaCliente';
+import CenaContato from './src/cenas/CenaContato';
 
 class App extends Component {
   render() {
@@ -25,6 +26,8 @@ class App extends Component {
             case 'cliente':
               return (
                 <CenaCliente navigator={navigator} />);
+            case 'contato':
+                return (<CenaContato navigator={navigator} />)
             case 'empresa':
               break;
             case 'servico':
