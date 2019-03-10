@@ -14,6 +14,7 @@ import CenaPrincipal from './src/cenas/CenaPrincipal';
 import CenaCliente from './src/cenas/CenaCliente';
 import CenaContato from './src/cenas/CenaContato';
 import CenaEmpresa from './src/cenas/CenaEmpresa';
+import CenaServico from './src/cenas/CenaServico';
 
 class App extends Component {
   render() {
@@ -31,7 +32,7 @@ class App extends Component {
             case 'empresa':
               return <CenaEmpresa navigator={navigator} />;
             case 'servico':
-              break;
+              return <CenaServico navigator={navigator} />;
             default:
           } 
         }}
