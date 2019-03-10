@@ -13,7 +13,7 @@ import detalhesClientes from '../images/detalhe_cliente.png';
 import cliente1 from '../images/cliente1.png';
 import cliente2 from '../images/cliente2.png';
 
-const CenaCliente = () => {
+const CenaCliente = ({ navigator }) => {
   const { cabecalho, titulo, detalhes, texto } = estilos;
 
   return (
@@ -21,7 +21,7 @@ const CenaCliente = () => {
       <StatusBar
         backgroundColor="#ccc"
       />
-      <BarraNavegacao voltar />
+      <BarraNavegacao voltar navigator={navigator} />
       
       <View style={cabecalho}>
         <Image source={detalhesClientes} />

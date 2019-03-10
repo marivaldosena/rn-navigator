@@ -11,7 +11,7 @@ import React, { Component } from 'react';
 import { Navigator } from 'react-native-deprecated-custom-components';
 
 import CenaPrincipal from './src/cenas/CenaPrincipal';
-import CenaClientes from './src/cenas/CenaCliente';
+import CenaCliente from './src/cenas/CenaCliente';
 
 class App extends Component {
   render() {
@@ -21,15 +21,10 @@ class App extends Component {
         renderScene={(route, navigator) => {
           switch (route.id) {
             case 'principal':
-              return (<CenaPrincipal
-                navigator={navigator}
-              />);
+              return (<CenaPrincipal navigator={navigator} />);
             case 'cliente':
               return (
-                <CenaClientes
-                  navigator={navigator}
-                />  
-              );
+                <CenaCliente navigator={navigator} />);
             case 'empresa':
               break;
             case 'servico':

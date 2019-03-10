@@ -33,26 +33,26 @@ const CenaPrincipal = ({ navigator }) => {
         <View style={menuGrupo}>
           
           <TouchableHighlight
-            onPress={() => navigator.push('cliente')}
+            onPress={() => navigator.push({ id: 'cliente' })}
           >
             <Image style={imagemMenu} source={menuClienteLogo} />
           </TouchableHighlight>
           
           <TouchableHighlight
-            onPress={() => navigator.push('contato')}
+            onPress={() => alert('contato')}
           >
             <Image style={imagemMenu} source={menuContatoLogo} />
           </TouchableHighlight>
         </View>
         <View style={menuGrupo}>
           <TouchableHighlight
-            onPress={() => navigator.push('empresa')}
+            onPress={() => alert('empresa')}
           >
             <Image style={imagemMenu} source={menuEmpresaLogo} />
           </TouchableHighlight>
 
           <TouchableHighlight
-            onPress={() => navigator.push('servico')}
+            onPress={() => alert('servico')}
           >
             <Image style={imagemMenu} source={menuServicoLogo} />
           </TouchableHighlight>
